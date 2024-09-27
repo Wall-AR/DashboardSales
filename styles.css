@@ -1,0 +1,41 @@
+/* styles.css */
+
+.dashboard-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: #4caf50;
+  height: 100%;
+  width: 75%; /* Atualize dinamicamente para cada vendedor */
+}
+
+.pie-chart {
+  width: 300px;
+  height: 300px;
+}
