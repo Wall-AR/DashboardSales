@@ -5,11 +5,10 @@ import VendedorInfo from './VendedorInfo';
 import EmpresaInfo from './EmpresaInfo';
 import VendasPieChart from './VendasPieChart';
 import MesSelector from './MesSelector';
-// Importando os componentes necessários do Chart.js e registrando-os
-import { Chart, ArcElement, Tooltip, Legend } from 'chart.js'; 
+import { Chart } from 'chart.js';
 
 // Registrar os componentes necessários do Chart.js
-Chart.register(ArcElement, Tooltip, Legend); // Adicionando registro correto
+Chart.register();
 
 const SalesDashboard: React.FC = () => {
     const [data, setData] = useState<{ id: number; name: string; sales: number; target: number; clients: number }[]>([]);
@@ -18,18 +17,23 @@ const SalesDashboard: React.FC = () => {
     const totalSales = data.reduce((acc, curr) => acc + curr.sales, 0); // Soma das vendas
 
     useEffect(() => {
+        // Simulação de dados com vendedores fictícios
         const fetchData = async () => {
             try {
-                const response = await fetch('/api/sales-data'); // Exemplo de endpoint
-                const result = await response.json();
-                console.log(result); // Verifique se os dados estão corretos
+                // Aqui você pode substituir pela chamada à API quando estiver pronta
+                const result = [
+                    { id: 1, name: 'Wallace', sales: 3000, target: 5000, clients: 25 },
+                    { id: 2, name: 'Thaynan', sales: 4000, target: 6000, clients: 30 },
+                    { id: 3, name: 'Kamila', sales: 2000, target: 4000, clients: 20 },
+                    { id: 4, name: 'Áquila', sales: 1500, target: 3000, clients: 15 },
+                ];
                 setData(result);
             } catch (error) {
                 console.error('Erro ao carregar dados', error);
             }
             setLoading(false);
         };
-
+        
         fetchData();
     }, []);
 
@@ -42,6 +46,7 @@ const SalesDashboard: React.FC = () => {
                 'rgba(75,192,192,0.6)',
                 'rgba(255,99,132,0.6)',
                 'rgba(255,206,86,0.6)',
+                'rgba(153,102,255,0.6)',
             ],
         }],
     };
@@ -66,13 +71,11 @@ const SalesDashboard: React.FC = () => {
                 </div>
 
                 {/* Coluna da Direita - Gráfico Circular */}
-                <div style={{ width: '400px', height: '400px' }}> {/* Definindo altura e largura */}
-                    <VendasPieChart data={pieChartData} />
-                </div>
+                <VendasPieChart data={pieChartData} />
             </div>
 
             {/* Indicadores Gerais da Empresa */}
-            <EmpresaInfo totalSales={totalSales} companyTarget={640000} superTarget={800000} />
+            <EmpresaInfo totalSales={totalSales} companyTarget={10000} superTarget={15000} />
         </div>
     );
 };
