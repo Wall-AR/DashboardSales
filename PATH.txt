@@ -1,0 +1,1 @@
+PATH=C:\Python312\Scripts\;C:\Python312\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\wesle\AppData\Local\Microsoft\WindowsApps;C:\Users\wesle\AppData\Roaming\npm 
