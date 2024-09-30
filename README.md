@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+📊 Dashboard de Vendas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao Dashboard de Vendas! Este projeto é uma aplicação web moderna e interativa para visualização e análise de dados de vendas, metas e desempenho da equipe de vendas. Oferece uma interface visualmente atraente e fácil de usar, com gráficos dinâmicos e dados em tempo real para ajudar a acompanhar o progresso da sua equipe.
 
-## Available Scripts
+👨‍💻 Criador
+Wall-AR
 
-In the project directory, you can run:
 
-### `npm start`
+🚀 Sobre o Projeto
+Este projeto foi criado para auxiliar gerentes de vendas e executivos a monitorar o desempenho da equipe, metas de vendas e indicadores de sucesso. Ele centraliza as informações em uma interface intuitiva e responsiva, permitindo uma análise visual e precisa dos dados.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+🏆 Características principais:
+📈 Gráficos interativos: Visualize os dados de vendas e o desempenho da equipe com gráficos dinâmicos e fáceis de interpretar.
+🎯 Metas da Empresa: Acompanhe o progresso das vendas em relação às metas estabelecidas.
+📊 Relatórios visuais: Gráficos de distribuição de vendas por vendedor, comparações entre as metas e o desempenho real.
+📅 Filtros de Mês: Selecione meses específicos para analisar o progresso de cada período.
+👥 Indicadores de Vendedores: Informações detalhadas sobre cada vendedor, com uma visualização clara de vendas, metas e número de clientes.
+🛠️ Tecnologias Utilizadas
+Este projeto utiliza as seguintes tecnologias e bibliotecas para entregar uma interface rápida e responsiva:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+React.js (Frontend)
+TypeScript (Tipagem estática)
+Chart.js e React-Chartjs-2 (Gráficos interativos)
+React Hook Form e Yup (Formulários e validação de dados)
+CSS3 (Estilização)
+HTML5 (Estrutura de página)
+📊 Interface de Usuário
+Aqui estão alguns dos gráficos e funcionalidades que você encontrará no Dashboard de Vendas:
 
-### `npm test`
+📈 Gráfico de Vendas Mensais por Vendedor
+Visualize as vendas de cada vendedor ao longo do mês, com um gráfico dinâmico que mostra o progresso de cada um em relação à meta.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+🎯 Metas da Empresa
+Veja o status das vendas em relação às metas estabelecidas para a empresa, com um gráfico de barras comparando o total de vendas com a meta e a super meta.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+📊 Distribuição de Vendas
+O gráfico de distribuição permite visualizar rapidamente como as vendas estão distribuídas entre os membros da equipe, permitindo uma análise clara do desempenho.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+💡 Ideias Futuras
+Estamos sempre pensando em maneiras de melhorar o Dashboard de Vendas. Aqui estão algumas ideias de melhorias para o futuro:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+📅 Filtros avançados: Permitir a seleção de intervalos personalizados (ex. semanal, trimestral) para análise.
+📤 Exportação de relatórios: Gerar relatórios em PDF ou Excel para facilitar a análise offline.
+📱 Aplicativo Mobile: Criar uma versão mobile nativa do Dashboard de Vendas.
+🌐 Integrações com API: Adicionar integração com APIs de vendas externas para importação automática de dados.
+📍 Localização de Vendas: Implementar visualização geográfica para ver onde as vendas estão concentradas.
+🤝 Como Contribuir
+Se você deseja contribuir com este projeto, siga os passos abaixo:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Faça um fork do projeto
+Crie uma nova branch para a sua funcionalidade (git checkout -b feature/NovaFuncionalidade)
+Faça o commit das suas alterações (git commit -m 'Add nova funcionalidade')
+Faça o push para a branch (git push origin feature/NovaFuncionalidade)
+Abra um Pull Request
+📜 Licença(futuro)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feito com ❤️ por Wall Rodrigues
